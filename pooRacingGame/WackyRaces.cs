@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -37,7 +37,8 @@ namespace pooRacingGame
                 Pista pista16 = new Pista(230, new Corredor("¬O=°-o>"));
 
                 Console.Clear();
-                Console.WriteLine(" $#@ - Wacky Races - @#$");
+                Console.WriteLine(" $#@ - Wacky Races - @#$" +
+                                  "\n ");
                
                 // Mostar quem ta correndo
                 Console.WriteLine(" Rancers: " +
@@ -56,10 +57,13 @@ namespace pooRacingGame
                     "\n 13 - Opala BiTurbo V12 - Jujubinha (13)" +
                     "\n 14 - Uno BiTurbo V16 - Mumuzinho (14)" +
                     "\n 15 - Chevette Godzilla - Cadu Moreira (15)" +
-                    "\n 16 - Hot Rod Boat - Bob Esponja e Patrick (16)");
+                    "\n 16 - Hot Rod Boat - Bob Esponja e Patrick (16)" +
+                    "\n ");
                  
                 // Cria uma variavel para as apostas
-                Console.Write(" Which runner do you bet on (|1|2|3|4|5|6|7|8|9|10|11|12|13|14|15|16|): ");
+                Console.Write
+                    (" Which runner do you bet on " +
+                    "\n |1|2|3|4|5|6|7|8|9|10|11|12|13|14|15|16|: ");
                 aposta = Convert.ToInt32(Console.ReadLine());
                 ganhador = 0;
                 ganhou = false;
@@ -164,71 +168,91 @@ namespace pooRacingGame
                     pista14.ExibirPista();
                     pista15.ExibirPista();
                     pista16.ExibirPista();
-                    Thread.Sleep(500);
+                    Thread.Sleep(200);
                 }
                 Console.Clear();
-                Console.WriteLine(" $#@ - Wacky Races - @#$");
+                Console.WriteLine(" $#@ - Wacky Races - @#$" +
+                    "\n ");
                 Console.WriteLine($" The winner was the number runner {ganhador}");
                 switch (ganhador)
                 
                 // Variavel do ganhador
                 {
                     case 1:
-                        Console.WriteLine(" Dick Vigarista e  Muttley");
+                        Console.WriteLine(" Dick Vigarista e  Muttley" +
+                                          "\n ");
                         break;
                     case 2:
-                        Console.WriteLine(" Irmãos Rocha");
+                        Console.WriteLine(" Irmãos Rocha" +
+                                          "\n");
                         break;
                     case 3:
-                        Console.WriteLine(" Medonho e Medinho");
+                        Console.WriteLine(" Medonho e Medinho" +
+                                          "\n");
                         break;
                     case 4:
-                        Console.WriteLine(" Professor Aéreo");
+                        Console.WriteLine(" Professor Aéreo" +
+                                          "\n");
                         break;
                     case 5:
-                        Console.WriteLine(" Barão Vermelho");
+                        Console.WriteLine(" Barão Vermelho" +
+                                          "\n");
                         break;
                     case 6:
-                        Console.WriteLine(" Penélope Charmosa");
+                        Console.WriteLine(" Penélope Charmosa" +
+                                          "\n");
                         break;
                     case 7:
-                        Console.WriteLine(" Soldado Meekley e Sargento Bombarda");
+                        Console.WriteLine(" Soldado Meekley e Sargento Bombarda" +
+                                          "\n");
                         break;
                     case 8:
-                        Console.WriteLine(" Quadrilha de Morte");
+                        Console.WriteLine(" Quadrilha de Morte" +
+                                          "\n");
                         break;
                     case 9:
-                        Console.WriteLine(" Tio Tomás e Chorão");
+                        Console.WriteLine(" Tio Tomás e Chorão" +
+                                          "\n");
                         break;
                     case 10:
-                        Console.WriteLine("Peter Perfeito");
+                        Console.WriteLine("Peter Perfeito" +
+                                          "\n");
                         break;
                     case 11:
-                        Console.WriteLine(" Rufus Lenhador e Dentes-de-Serra");
+                        Console.WriteLine(" Rufus Lenhador e Dentes-de-Serra" +
+                                          "\n");
                         break;
                     case 12:
-                        Console.WriteLine(" Ayrton Senna");
+                        Console.WriteLine(" Ayrton Senna" +
+                                          "\n");
                         break;
                     case 13:
-                        Console.WriteLine(" Jujubinha");
+                        Console.WriteLine(" Jujubinha" +
+                                          "\n");
                         break;
                     case 14:
-                        Console.WriteLine(" Mumuzinho");
+                        Console.WriteLine(" Mumuzinho" +
+                                          "\n");
                         break;
                     case 15:
-                        Console.WriteLine(" Cadu Moreira");
+                        Console.WriteLine(" Cadu Moreira" +
+                                          "\n");
                         break;
                     case 16:
-                        Console.WriteLine(" Bob Esponja e Patrick");
+                        Console.WriteLine(" Bob Esponja e Patrick" +
+                                          "\n");
                         break;
                 }
                 if (ganhador == aposta)
                 {
-                    Console.WriteLine(" $#@ - Congratulations!!!! You Win!!!! - @#$");
+                    Console.WriteLine
+                        (" $#@ - Congratulations!!!! You Win!!!! - @#$" +
+                         "\n ");
                 }
                 else
                 {
-                    Console.WriteLine(" $#@ - What a Shame !!!! You Lost!!!! - @#$");
+                    Console.WriteLine(" $#@ - What a Shame !!!! You Lost!!!! - @#$" +
+                                      "\n");
                 }
                 Console.Write(" Play again Y ou N: ");
                 resp = Console.ReadLine().ToLower();
@@ -236,6 +260,3 @@ namespace pooRacingGame
         }
     }
 }
-
-
-
