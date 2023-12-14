@@ -164,7 +164,6 @@ namespace pooRacingGame
                     pista14.ExibirPista();
                     pista15.ExibirPista();
                     pista16.ExibirPista();
-                    Console.ReadKey();
                     Thread.Sleep(500);
                 }
                 Console.Clear();
