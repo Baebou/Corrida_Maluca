@@ -1,9 +1,4 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading;
-using System.Threading.Tasks;
+using System.Threading;// ao adicionar esse Threading ao sistema fara com que funcione o Thread.Sleep
 
 namespace pooRacingGame
 {
