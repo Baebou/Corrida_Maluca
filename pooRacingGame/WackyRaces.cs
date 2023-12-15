@@ -1,4 +1,4 @@
-using System.Threading;// ao adicionar esse Threading ao sistema fara com que funcione o Thread.Sleep
+using System.Threading;// Ao adicionar esse Threading ao sistema fará com que funcione o Thread.Sleep e outros codigos integrado ao Thread
 
 namespace pooRacingGame
 {
